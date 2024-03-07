@@ -6,15 +6,15 @@ We built a 'full-field' LED stimulator as a visual stimulus generator for in viv
 
 ## Parts 
 
-| Item | Link | Quantity | Cost |
-|------|------|----------|------|
+| Item | Link | Quantity | Cost | Datasheet |
+|------|------|----------|------|-----------|
 | **LEDS**| | | |
 | UV LED   |[C3535U- UNL1-A1G11H-380 TSLC, UV LED, 390nm 480mW 125 °, 2-Pin Surface Mount package](https://uk.rs-online.com/web/p/uv-leds/9033769) | (6 x 6 array) = 36 + any spares | £6.88 each |
 | Green LED | [ams OSRAM3 V Green LED PLCC 2 SMD, TOPLED LT T673-Q1R2-25](https://uk.rs-online.com/web/p/leds/6648197) | (6 x 6 array) = 36 + any spares | £0.196 each|
 | LED mounting PCB |  [Custom PCB board for mounting LEDs](repo link) | 6 (Each board is populated with 6 of green and 6 UV) | ?? | 
 | Soldering stencil | [Custom stencil](repo link) | 1 | ?? |
 |**PSU and Drivers**|||
-| LED Driver | [Recom LED Driver, 2 → 35V dc Output, 350mA Output, Constant Current Dimmable](https://uk.rs-online.com/web/p/led-drivers/0416913) | ?? | £12.16 each |
+| LED Driver | [Recom LED Driver, 2 → 35V dc Output, 350mA Output, Constant Current Dimmable](https://uk.rs-online.com/web/p/led-drivers/0416913) | ?? | £12.16 each | [detailed](https://g.recomcdn.com/media/Datasheet/pdf/.fYUQjOlW/.t2a80a771bdbb0ef300f7/Datasheet-93/RCD-24.pdf) |
 | PSU | [12V dc Output, 5A Output](https://uk.rs-online.com/web/p/ac-dc-adapters/8808408?gb=s) | ?? | £21.38 each |
 |**Box Construction**| | |
 | Structure | [MakerBeam starter kit](https://www.technobotsonline.com/makerbeamxl-regular-starter-kit-in-black-anodised-threaded.html) | 1 | £102.95 (possible to buy specific parts separately) |
