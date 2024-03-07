@@ -34,3 +34,8 @@ We opted to make a 200x200mm box with a ~50mm depth for achieving a uniform inte
 3) Add 4 x 50mm beams upright to the 4 corners of one of the squares.
 4) Screw in the other 200x200mm square to these upright beams to form the top of the box.
 5) Cut 4 more pieces of aluminium to form the 4 walls of the box. You want them to be flush with the top of the box to maximise reflectivity of the light inside the box.
+
+### Populating the LEDs on the PCB boards
+Use the soldering stencil to populate each of the PCB boards with 6 x green and 6 x UV LEDs. The LEDs are arranged in alternating rows of 3 green/UV.
+
+
