@@ -1,7 +1,7 @@
 # ganzfeld-stimulator
 
 ## Overview
-We built a 'full-field' LED stimulator as a visual stimulus generator for in vivo rodent physiolgoy experiments. The stimulator can generate arbitrary temporal patterns of green and UV light (chromatic channels the mouse visual system is sensitive to) such as high frequency flicker of sinusoidal dimming. Stimulation patterns are generated using PWM signals from a microcontroller.
+We built a 'full-field' LED stimulator as a visual stimulus generator for in vivo rodent physiology experiments. The stimulator can generate arbitrary temporal patterns of green and UV light (chromatic channels the mouse visual system is sensitive to) such as high frequency flicker or sinusoidal dimming. Stimulation patterns are generated using PWM signals from a microcontroller.
 
 
 ## Parts 
