@@ -4,7 +4,7 @@ const unsigned long contrastSwitchTime = 3000; // in ms
 
 // Variables will change:
 long randNumber;      // the variable which is supposed to hold the random number
-int contrast = LOW;
+volatile byte contrast = LOW;
 
 // Generally, you should use "unsigned long" for variables that hold time
 // The value will quickly become too large for an int to store
@@ -28,11 +28,7 @@ void loop() {
     switchPreviousMillis = switchCurrentMillis;
 
         // if the LED is off turn it on and vice-versa:
-    if (contrast == LOW) {
-      contrast = HIGH;
-    } else {
-      contrast = LOW;
-    }
+    contrast=!contrast;
     }
   
   unsigned long currentMillis = millis();
