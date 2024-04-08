@@ -1,5 +1,7 @@
+// constants won't change:
 const int ledPin =  3;// the number of the LED pin
 const unsigned long flickerFreq = 40;
+const long interval = 1000/(flickerFreq*2);           // interval at which to blink (milliseconds)
 
 // Variables will change:
 int ledState = LOW;             // ledState used to set the LED
@@ -8,8 +10,6 @@ int ledState = LOW;             // ledState used to set the LED
 // The value will quickly become too large for an int to store
 unsigned long previousMillis = 0;        // will store last time LED was updated
 
-// constants won't change:
-const long interval = 1000/(flickerFreq*2);           // interval at which to blink (milliseconds)
 
 void setup() {
   // set the digital pin as output:
