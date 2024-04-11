@@ -14,7 +14,7 @@ unsigned long switchPreviousMillis = 0;        // will store last time LED was u
 
 void setup() {
   // set the digital pin as output:
-  pinMode(ledPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);Upd
   randomSeed(analogRead(0));
   
 }
