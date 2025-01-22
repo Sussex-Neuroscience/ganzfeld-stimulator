@@ -632,6 +632,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Op_amp:LM358N_NOPB"
 			(pin_names
 				(offset 1.016)
@@ -2001,10 +2083,28 @@
 		)
 	)
 	(junction
-		(at 138.43 54.61)
+		(at 153.67 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27b514f3-31f0-4f46-a861-6202a7c5e06d")
+	)
+	(junction
+		(at 147.32 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48511204-cb30-49ab-95c5-12ba22e3b93a")
+	)
+	(junction
+		(at 151.13 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77f82283-e94c-4338-a747-b5af204ba459")
+	)
+	(junction
+		(at 124.46 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80a40258-dd27-4b0c-bafc-a2b453aa6c80")
 	)
 	(junction
 		(at 116.84 123.19)
@@ -2013,20 +2113,32 @@
 		(uuid "99b49869-cb2b-4aca-b187-5c9d93444dd0")
 	)
 	(junction
-		(at 118.11 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a6a2bab9-ff34-4d12-a02f-305d32472e69")
-	)
-	(junction
 		(at 143.51 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a71cf5d9-4c61-43fe-b28d-3f677f8af493")
 	)
+	(junction
+		(at 109.22 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "afa9eae3-5fec-4ab5-b3cc-aa1cf4fb78b0")
+	)
+	(junction
+		(at 125.73 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce204790-d222-4647-9981-0102f77ba963")
+	)
+	(junction
+		(at 124.46 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2becadc-25d1-4bb6-ad4f-28975283bcca")
+	)
 	(wire
 		(pts
-			(xy 138.43 54.61) (xy 143.51 54.61)
+			(xy 153.67 55.88) (xy 158.75 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2046,13 +2158,33 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 44.45) (xy 142.24 44.45)
+			(xy 153.67 45.72) (xy 157.48 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1d65a49e-df30-46e5-a317-fa2f06b00749")
+	)
+	(wire
+		(pts
+			(xy 151.13 29.21) (xy 144.78 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20def067-01e7-434c-b9bf-e6d0d8bf87da")
+	)
+	(wire
+		(pts
+			(xy 137.16 144.78) (xy 137.16 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21389173-0893-4eb6-b6d1-f9f17456d135")
 	)
 	(wire
 		(pts
@@ -2066,13 +2198,33 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 44.45) (xy 118.11 44.45)
+			(xy 124.46 144.78) (xy 124.46 147.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3439afdc-53b7-40c5-954c-4fb3a31a6acd")
+		(uuid "2e8b662b-b5dc-495f-896c-69e5daa111f7")
+	)
+	(wire
+		(pts
+			(xy 121.92 144.78) (xy 124.46 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35fdd143-0807-41a4-a1bb-c66e565eb8c9")
+	)
+	(wire
+		(pts
+			(xy 124.46 55.88) (xy 123.19 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39763f21-b971-4251-b88c-9f53c1d020f4")
 	)
 	(wire
 		(pts
@@ -2096,6 +2248,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 147.32) (xy 143.51 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45d4ffa9-dc1f-47ac-86b6-520dc4a80a29")
+	)
+	(wire
+		(pts
 			(xy 91.44 77.47) (xy 91.44 80.01)
 		)
 		(stroke
@@ -2106,13 +2268,23 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 54.61) (xy 120.65 54.61)
+			(xy 96.52 26.67) (xy 99.06 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "556a15b2-292a-48e2-b9bf-527ab74fc568")
+		(uuid "6321c52a-3eee-4c17-8910-6022066d3c4d")
+	)
+	(wire
+		(pts
+			(xy 137.16 144.78) (xy 138.43 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65c03c26-4f67-45e5-b3cf-63785a940d7e")
 	)
 	(wire
 		(pts
@@ -2123,6 +2295,16 @@
 			(type default)
 		)
 		(uuid "6c67719d-10ee-41d6-b326-717d95a7e3e2")
+	)
+	(wire
+		(pts
+			(xy 135.89 26.67) (xy 139.7 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d6f6eff-50a5-423c-aac8-06b5a6ff6bac")
 	)
 	(wire
 		(pts
@@ -2146,6 +2328,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 147.32) (xy 118.11 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bd736ad-b941-4093-bec2-d5eccbd50a8b")
+	)
+	(wire
+		(pts
 			(xy 116.84 124.46) (xy 116.84 123.19)
 		)
 		(stroke
@@ -2156,6 +2348,46 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 26.67) (xy 135.89 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93b17514-546b-4b86-ace2-6c10ad79256e")
+	)
+	(wire
+		(pts
+			(xy 135.89 29.21) (xy 142.24 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "973421cf-1f65-4721-acf5-f6e00286c587")
+	)
+	(wire
+		(pts
+			(xy 124.46 55.88) (xy 124.46 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a47bdf2-945c-4d0b-8fb5-6403862ab1b0")
+	)
+	(wire
+		(pts
+			(xy 106.68 26.67) (xy 109.22 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ad1949b-426c-4d28-a853-5a41d51af8e7")
+	)
+	(wire
+		(pts
 			(xy 91.44 50.8) (xy 91.44 53.34)
 		)
 		(stroke
@@ -2163,6 +2395,86 @@
 			(type default)
 		)
 		(uuid "a2b47e95-09b6-40a0-8c75-b92d369f466e")
+	)
+	(wire
+		(pts
+			(xy 109.22 29.21) (xy 104.14 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2ee3f94-427d-42a0-863d-d3144a9242ec")
+	)
+	(wire
+		(pts
+			(xy 96.52 26.67) (xy 96.52 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9078098-57d1-4678-9652-432f91dad69b")
+	)
+	(wire
+		(pts
+			(xy 147.32 26.67) (xy 151.13 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4997f12-dafd-4c92-b6ad-630cc9e9f5cf")
+	)
+	(wire
+		(pts
+			(xy 137.16 147.32) (xy 140.97 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5cafd50-b898-40a5-ba1a-ade03149ec32")
+	)
+	(wire
+		(pts
+			(xy 124.46 54.61) (xy 123.19 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcb6050f-a8ae-44c0-84e3-b7e4088fc32f")
+	)
+	(wire
+		(pts
+			(xy 96.52 29.21) (xy 101.6 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0803915-8d5b-49d5-bd2c-7b099385ee3c")
+	)
+	(wire
+		(pts
+			(xy 125.73 55.88) (xy 128.27 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2ad742c-84b3-4a57-b3f5-3e4c1f3a4b6c")
+	)
+	(wire
+		(pts
+			(xy 124.46 147.32) (xy 120.65 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce5d6d2e-9290-41ef-9cdc-ee457ba77077")
 	)
 	(wire
 		(pts
@@ -2186,6 +2498,36 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 55.88) (xy 123.19 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4f91dbf-a48a-4b8d-9a74-f2f0ff124a82")
+	)
+	(wire
+		(pts
+			(xy 147.32 144.78) (xy 147.32 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6bb9eea-11a8-43de-97e5-77f99cd286ee")
+	)
+	(wire
+		(pts
+			(xy 125.73 55.88) (xy 124.46 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd5914f3-3267-4291-89a6-54b457dda54a")
+	)
+	(wire
+		(pts
 			(xy 116.84 123.19) (xy 111.76 123.19)
 		)
 		(stroke
@@ -2196,7 +2538,27 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 30.48) (xy 130.81 31.75)
+			(xy 114.3 144.78) (xy 114.3 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e451f108-926e-4eea-b56d-120978f87706")
+	)
+	(wire
+		(pts
+			(xy 146.05 144.78) (xy 147.32 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e48e5846-75a4-4502-a03d-a77f07e158d7")
+	)
+	(wire
+		(pts
+			(xy 151.13 26.67) (xy 151.13 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2206,7 +2568,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 30.48) (xy 99.06 31.75)
+			(xy 109.22 26.67) (xy 109.22 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2216,7 +2578,7 @@
 	)
 	(global_label "G1"
 		(shape input)
-		(at 110.49 52.07 180)
+		(at 118.11 53.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2226,7 +2588,7 @@
 		)
 		(uuid "070191ae-6b65-4b41-bd58-c502a3d5e47f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.0253 52.07 0)
+			(at 112.6453 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2370,7 +2732,7 @@
 	)
 	(global_label "D2"
 		(shape input)
-		(at 128.27 31.75 90)
+		(at 135.89 26.67 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2380,7 +2742,7 @@
 		)
 		(uuid "5759638f-482a-4edb-90a8-000c5a549ae8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.27 26.2853 90)
+			(at 135.89 21.2053 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2458,7 +2820,7 @@
 	)
 	(global_label "D1"
 		(shape input)
-		(at 111.76 44.45 90)
+		(at 125.73 45.72 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2468,7 +2830,7 @@
 		)
 		(uuid "75b5334f-9769-4639-9e09-dc05010f091d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.76 38.9853 90)
+			(at 125.73 40.2553 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2480,7 +2842,7 @@
 	)
 	(global_label "G2"
 		(shape input)
-		(at 130.81 52.07 180)
+		(at 146.05 53.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2490,7 +2852,7 @@
 		)
 		(uuid "778f4a94-88c9-4c6d-8db8-6afad9f3ceca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 125.3453 52.07 0)
+			(at 140.5853 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2502,7 +2864,7 @@
 	)
 	(global_label "D3"
 		(shape input)
-		(at 118.11 147.32 90)
+		(at 114.3 144.78 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2512,7 +2874,7 @@
 		)
 		(uuid "7a23fc92-87d6-41d8-85f4-40c29b89c961")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.11 141.8553 90)
+			(at 114.3 139.3153 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2546,7 +2908,7 @@
 	)
 	(global_label "D2"
 		(shape input)
-		(at 142.24 44.45 90)
+		(at 157.48 45.72 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2556,7 +2918,7 @@
 		)
 		(uuid "869a18db-0c3b-4126-a93c-658b57fad74f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.24 38.9853 90)
+			(at 157.48 40.2553 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2678,7 +3040,7 @@
 	)
 	(global_label "D4"
 		(shape input)
-		(at 140.97 147.32 90)
+		(at 137.16 144.78 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2688,7 +3050,7 @@
 		)
 		(uuid "b7779631-88a9-4e4e-9e82-f3f6a08965b0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.97 141.8553 90)
+			(at 137.16 139.3153 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2766,7 +3128,7 @@
 	)
 	(global_label "S2"
 		(shape input)
-		(at 143.51 54.61 0)
+		(at 158.75 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2776,7 +3138,7 @@
 		)
 		(uuid "c6cc326d-cac7-4610-9915-a05b024d67fc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.9142 54.61 0)
+			(at 164.1542 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2810,7 +3172,7 @@
 	)
 	(global_label "D1"
 		(shape input)
-		(at 96.52 31.75 90)
+		(at 96.52 26.67 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2820,7 +3182,7 @@
 		)
 		(uuid "cd98005d-e765-4b2e-a264-7f19cd6a1f92")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 96.52 26.2853 90)
+			(at 96.52 21.2053 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2920,7 +3282,7 @@
 	)
 	(global_label "S1"
 		(shape input)
-		(at 120.65 54.61 0)
+		(at 128.27 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2930,7 +3292,7 @@
 		)
 		(uuid "f5fac0a2-e54c-4200-8768-e6f189620c45")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.0542 54.61 0)
+			(at 133.6742 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3036,7 +3398,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic_Shielded:Conn_01x02_Shielded")
-		(at 130.81 36.83 270)
+		(at 144.78 34.29 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3044,7 +3406,7 @@
 		(dnp no)
 		(uuid "02ae43a7-5554-4e5a-a311-da685e0f8601")
 		(property "Reference" "J8"
-			(at 128.2699 39.37 0)
+			(at 142.2399 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3053,7 +3415,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Shielded"
-			(at 119.888 43.434 90)
+			(at 133.858 40.894 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3062,7 +3424,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal"
-			(at 130.81 36.83 0)
+			(at 144.78 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3071,7 +3433,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 36.83 0)
+			(at 144.78 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3080,7 +3442,7 @@
 			)
 		)
 		(property "Description" "Generic shielded connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 130.81 36.83 0)
+			(at 144.78 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3101,6 +3463,73 @@
 			(project "custom_driver"
 				(path "/661e7ff5-ee08-4ede-bc5c-cab2b8d3d06a"
 					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 102.87 26.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09831a04-f721-4b26-8951-b28d27a378bb")
+		(property "Reference" "R5"
+			(at 102.87 23.876 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 102.362 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 102.87 28.448 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 102.87 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "689eef8f-3007-476b-af7f-7fc0c2ab65bf")
+		)
+		(pin "2"
+			(uuid "d356920a-8036-42c6-b4da-065ad3a6127f")
+		)
+		(instances
+			(project ""
+				(path "/661e7ff5-ee08-4ede-bc5c-cab2b8d3d06a"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3173,7 +3602,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 120.65 147.32 0)
+		(at 124.46 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3182,7 +3611,7 @@
 		(fields_autoplaced yes)
 		(uuid "18e5bc85-300d-4429-8cef-1872c8f4a551")
 		(property "Reference" "#PWR011"
-			(at 120.65 151.13 0)
+			(at 124.46 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3191,7 +3620,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 120.65 142.24 0)
+			(at 124.46 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3199,7 +3628,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 147.32 0)
+			(at 124.46 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3208,7 +3637,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 147.32 0)
+			(at 124.46 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3217,7 +3646,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 120.65 147.32 0)
+			(at 124.46 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3513,7 +3942,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 143.51 147.32 0)
+		(at 147.32 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3522,7 +3951,7 @@
 		(fields_autoplaced yes)
 		(uuid "28e0e75f-aea9-47cf-9f90-a8850d2c9b62")
 		(property "Reference" "#PWR012"
-			(at 143.51 151.13 0)
+			(at 147.32 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3531,7 +3960,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 143.51 142.24 0)
+			(at 147.32 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3539,7 +3968,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 147.32 0)
+			(at 147.32 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3548,7 +3977,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 147.32 0)
+			(at 147.32 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3557,7 +3986,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 143.51 147.32 0)
+			(at 147.32 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4095,7 +4524,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 118.11 62.23 0)
+		(at 125.73 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4103,7 +4532,7 @@
 		(dnp no)
 		(uuid "4cdcac2a-89c5-4720-b20a-bce2c2877fa5")
 		(property "Reference" "#PWR01"
-			(at 118.11 68.58 0)
+			(at 125.73 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4112,7 +4541,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 118.11 66.04 0)
+			(at 125.73 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4120,7 +4549,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 62.23 0)
+			(at 125.73 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4129,7 +4558,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 62.23 0)
+			(at 125.73 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4138,7 +4567,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 62.23 0)
+			(at 125.73 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4177,7 +4606,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "6.8R"
 			(at 146.05 120.6499 0)
 			(effects
 				(font
@@ -4230,7 +4659,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 118.11 58.42 0)
+		(at 125.73 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4239,7 +4668,7 @@
 		(fields_autoplaced yes)
 		(uuid "5074c3e0-ddcb-467d-a2a8-fa4f647cc438")
 		(property "Reference" "R1"
-			(at 120.65 57.1499 0)
+			(at 128.27 58.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4247,8 +4676,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 120.65 59.6899 0)
+		(property "Value" "6.8R"
+			(at 128.27 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4257,7 +4686,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_Power_L38.0mm_W6.4mm_P40.64mm"
-			(at 116.332 58.42 90)
+			(at 123.952 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4266,7 +4695,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 58.42 0)
+			(at 125.73 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4275,7 +4704,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 118.11 58.42 0)
+			(at 125.73 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4293,6 +4722,73 @@
 			(project ""
 				(path "/661e7ff5-ee08-4ede-bc5c-cab2b8d3d06a"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 142.24 144.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "516e91e7-a429-4e58-bf5e-117fef2e10b6")
+		(property "Reference" "R8"
+			(at 141.986 142.494 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 141.986 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 142.24 146.558 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 142.24 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "79015e6a-3725-4705-8d13-ed24d92117bf")
+		)
+		(pin "2"
+			(uuid "fd49d759-3920-4fa8-bb1d-086399bc3cbf")
+		)
+		(instances
+			(project "custom_driver"
+				(path "/661e7ff5-ee08-4ede-bc5c-cab2b8d3d06a"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -4537,7 +5033,7 @@
 	)
 	(symbol
 		(lib_id "dk_Transistors-FETs-MOSFETs-Single:IRF510PBF")
-		(at 138.43 49.53 0)
+		(at 153.67 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4545,7 +5041,7 @@
 		(dnp no)
 		(uuid "539083bc-6d42-470b-bbe8-84cc0a28cb97")
 		(property "Reference" "Q2"
-			(at 124.968 45.72 0)
+			(at 140.208 46.99 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4554,7 +5050,7 @@
 			)
 		)
 		(property "Value" "IRFZ44NPBF"
-			(at 120.142 48.26 0)
+			(at 135.382 49.53 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4563,7 +5059,7 @@
 			)
 		)
 		(property "Footprint" "digikey-footprints:TO-220-3"
-			(at 143.51 44.45 0)
+			(at 158.75 45.72 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4573,7 +5069,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/91015/sihf510.pdf"
-			(at 143.51 41.91 0)
+			(at 158.75 43.18 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4583,7 +5079,7 @@
 			)
 		)
 		(property "Description" "MOSFET N-CH 100V 5.6A TO-220AB"
-			(at 138.43 49.53 0)
+			(at 153.67 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4592,7 +5088,7 @@
 			)
 		)
 		(property "Digi-Key_PN" "IRF510PBF-ND"
-			(at 143.51 39.37 0)
+			(at 158.75 40.64 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4602,7 +5098,7 @@
 			)
 		)
 		(property "MPN" "IRF510PBF"
-			(at 143.51 36.83 0)
+			(at 158.75 38.1 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4612,7 +5108,7 @@
 			)
 		)
 		(property "Category" "Discrete Semiconductor Products"
-			(at 143.51 34.29 0)
+			(at 158.75 35.56 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4622,7 +5118,7 @@
 			)
 		)
 		(property "Family" "Transistors - FETs, MOSFETs - Single"
-			(at 143.51 31.75 0)
+			(at 158.75 33.02 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4632,7 +5128,7 @@
 			)
 		)
 		(property "DK_Datasheet_Link" "http://www.vishay.com/docs/91015/sihf510.pdf"
-			(at 143.51 29.21 0)
+			(at 158.75 30.48 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4642,7 +5138,7 @@
 			)
 		)
 		(property "DK_Detail_Page" "/product-detail/en/vishay-siliconix/IRF510PBF/IRF510PBF-ND/811710"
-			(at 143.51 26.67 0)
+			(at 158.75 27.94 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4652,7 +5148,7 @@
 			)
 		)
 		(property "Description_1" "MOSFET N-CH 100V 5.6A TO-220AB"
-			(at 143.51 24.13 0)
+			(at 158.75 25.4 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4662,7 +5158,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Siliconix"
-			(at 143.51 21.59 0)
+			(at 158.75 22.86 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4672,7 +5168,7 @@
 			)
 		)
 		(property "Status" "Active"
-			(at 143.51 19.05 0)
+			(at 158.75 20.32 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4837,6 +5333,137 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 118.11 144.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "644b16e1-329a-4654-a52e-ad6d441892d3")
+		(property "Reference" "R7"
+			(at 118.11 142.494 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 118.11 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 118.11 146.558 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32be5085-02c3-438b-9b85-4219a0ffddf7")
+		)
+		(pin "2"
+			(uuid "3b62b3cc-a6dd-4e9a-8961-f0d3f999b85e")
+		)
+		(instances
+			(project "custom_driver"
+				(path "/661e7ff5-ee08-4ede-bc5c-cab2b8d3d06a"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 195.58 68.58 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6461247e-2db9-4e27-b28f-b5339e0ff638")
+		(property "Reference" "H2"
+			(at 198.12 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 198.12 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 195.58 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 195.58 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "custom_driver"
+				(path "/661e7ff5-ee08-4ede-bc5c-cab2b8d3d06a"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 116.84 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4854,7 +5481,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "6.8R"
 			(at 119.38 120.6499 0)
 			(effects
 				(font
@@ -4906,8 +5533,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 196.85 77.47 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "841aea66-6034-4590-a5e7-b0c0b4ec7219")
+		(property "Reference" "H3"
+			(at 199.39 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 199.39 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 196.85 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 196.85 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "custom_driver"
+				(path "/661e7ff5-ee08-4ede-bc5c-cab2b8d3d06a"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
-		(at 99.06 30.48 0)
+		(at 109.22 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4916,7 +5607,7 @@
 		(fields_autoplaced yes)
 		(uuid "87ac5cb3-7bef-4f99-8a9b-e1e49b33063c")
 		(property "Reference" "#PWR05"
-			(at 99.06 34.29 0)
+			(at 109.22 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4925,7 +5616,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 99.06 25.4 0)
+			(at 109.22 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4933,7 +5624,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 30.48 0)
+			(at 109.22 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4942,7 +5633,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 30.48 0)
+			(at 109.22 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4951,7 +5642,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 99.06 30.48 0)
+			(at 109.22 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5137,8 +5828,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 198.12 88.9 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93b440cd-18de-4bb2-b952-c749df7dcdb1")
+		(property "Reference" "H4"
+			(at 200.66 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 200.66 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 198.12 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 198.12 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "custom_driver"
+				(path "/661e7ff5-ee08-4ede-bc5c-cab2b8d3d06a"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
-		(at 130.81 30.48 0)
+		(at 151.13 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5147,7 +5902,7 @@
 		(fields_autoplaced yes)
 		(uuid "a1990a94-c1b0-4f18-8874-92bb56346f78")
 		(property "Reference" "#PWR04"
-			(at 130.81 34.29 0)
+			(at 151.13 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5156,7 +5911,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 130.81 25.4 0)
+			(at 151.13 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5164,7 +5919,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 30.48 0)
+			(at 151.13 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5173,7 +5928,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 30.48 0)
+			(at 151.13 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5182,7 +5937,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 130.81 30.48 0)
+			(at 151.13 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5204,16 +5959,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 138.43 58.42 0)
+		(at 153.67 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a4b7b264-6c5c-4085-8db2-ee285d1613b6")
 		(property "Reference" "R2"
-			(at 140.97 57.1499 0)
+			(at 156.21 58.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5221,8 +5975,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 140.97 59.6899 0)
+		(property "Value" "6.8R"
+			(at 156.21 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5231,7 +5985,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_Power_L38.0mm_W6.4mm_P40.64mm"
-			(at 136.652 58.42 90)
+			(at 151.892 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5240,7 +5994,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 138.43 58.42 0)
+			(at 153.67 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5249,7 +6003,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 138.43 58.42 0)
+			(at 153.67 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5479,7 +6233,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic_Shielded:Conn_01x02_Shielded")
-		(at 99.06 36.83 270)
+		(at 104.14 34.29 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5487,7 +6241,7 @@
 		(dnp no)
 		(uuid "b706f937-43a3-436c-ab4a-be939f6db230")
 		(property "Reference" "J1"
-			(at 96.5199 39.37 0)
+			(at 101.5999 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5496,7 +6250,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Shielded"
-			(at 88.138 43.434 90)
+			(at 93.218 40.894 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5505,7 +6259,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal"
-			(at 99.06 36.83 0)
+			(at 104.14 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5514,7 +6268,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 99.06 36.83 0)
+			(at 104.14 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5523,7 +6277,7 @@
 			)
 		)
 		(property "Description" "Generic shielded connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 99.06 36.83 0)
+			(at 104.14 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5715,6 +6469,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 143.51 26.67 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb9d8d2f-0090-435d-bde7-0e3cb5581c92")
+		(property "Reference" "R6"
+			(at 143.51 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 143.51 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 143.51 24.892 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 143.51 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "628c4143-6459-4d1b-b583-91512be36ea5")
+		)
+		(pin "2"
+			(uuid "a02efb97-1d50-40a0-8fef-23bf7706f100")
+		)
+		(instances
+			(project "custom_driver"
+				(path "/661e7ff5-ee08-4ede-bc5c-cab2b8d3d06a"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 137.16 115.57 0)
 		(unit 1)
@@ -5782,7 +6603,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 138.43 62.23 0)
+		(at 153.67 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5791,7 +6612,7 @@
 		(fields_autoplaced yes)
 		(uuid "d01ba924-84be-4d76-96db-5bfa47d5f0ae")
 		(property "Reference" "#PWR02"
-			(at 138.43 68.58 0)
+			(at 153.67 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5800,7 +6621,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 67.31 0)
+			(at 153.67 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5808,7 +6629,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 62.23 0)
+			(at 153.67 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5817,7 +6638,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 62.23 0)
+			(at 153.67 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5826,7 +6647,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 138.43 62.23 0)
+			(at 153.67 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5980,7 +6801,7 @@
 	)
 	(symbol
 		(lib_id "dk_Transistors-FETs-MOSFETs-Single:IRF510PBF")
-		(at 118.11 49.53 0)
+		(at 125.73 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5988,7 +6809,7 @@
 		(dnp no)
 		(uuid "e8632613-5d46-4c9c-b532-6be60ae46da4")
 		(property "Reference" "Q1"
-			(at 104.902 45.974 0)
+			(at 112.522 47.244 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5997,7 +6818,7 @@
 			)
 		)
 		(property "Value" "IRFZ44NPBF"
-			(at 99.568 48.768 0)
+			(at 107.188 50.038 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6006,7 +6827,7 @@
 			)
 		)
 		(property "Footprint" "digikey-footprints:TO-220-3"
-			(at 123.19 44.45 0)
+			(at 130.81 45.72 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6016,7 +6837,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/91015/sihf510.pdf"
-			(at 123.19 41.91 0)
+			(at 130.81 43.18 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6026,7 +6847,7 @@
 			)
 		)
 		(property "Description" "MOSFET N-CH 100V 5.6A TO-220AB"
-			(at 118.11 49.53 0)
+			(at 125.73 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6035,7 +6856,7 @@
 			)
 		)
 		(property "Digi-Key_PN" "IRF510PBF-ND"
-			(at 123.19 39.37 0)
+			(at 130.81 40.64 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6045,7 +6866,7 @@
 			)
 		)
 		(property "MPN" "IRF510PBF"
-			(at 123.19 36.83 0)
+			(at 130.81 38.1 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6055,7 +6876,7 @@
 			)
 		)
 		(property "Category" "Discrete Semiconductor Products"
-			(at 123.19 34.29 0)
+			(at 130.81 35.56 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6065,7 +6886,7 @@
 			)
 		)
 		(property "Family" "Transistors - FETs, MOSFETs - Single"
-			(at 123.19 31.75 0)
+			(at 130.81 33.02 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6075,7 +6896,7 @@
 			)
 		)
 		(property "DK_Datasheet_Link" "http://www.vishay.com/docs/91015/sihf510.pdf"
-			(at 123.19 29.21 0)
+			(at 130.81 30.48 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6085,7 +6906,7 @@
 			)
 		)
 		(property "DK_Detail_Page" "/product-detail/en/vishay-siliconix/IRF510PBF/IRF510PBF-ND/811710"
-			(at 123.19 26.67 0)
+			(at 130.81 27.94 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6095,7 +6916,7 @@
 			)
 		)
 		(property "Description_1" "MOSFET N-CH 100V 5.6A TO-220AB"
-			(at 123.19 24.13 0)
+			(at 130.81 25.4 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6105,7 +6926,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Siliconix"
-			(at 123.19 21.59 0)
+			(at 130.81 22.86 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6115,7 +6936,7 @@
 			)
 		)
 		(property "Status" "Active"
-			(at 123.19 19.05 0)
+			(at 130.81 20.32 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6137,6 +6958,70 @@
 			(project "custom_driver"
 				(path "/661e7ff5-ee08-4ede-bc5c-cab2b8d3d06a"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 195.58 59.69 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9cd09ba-c1b7-41f9-999b-1c9c437e3b54")
+		(property "Reference" "H1"
+			(at 198.12 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 198.12 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 195.58 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 195.58 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/661e7ff5-ee08-4ede-bc5c-cab2b8d3d06a"
+					(reference "H1")
 					(unit 1)
 				)
 			)
